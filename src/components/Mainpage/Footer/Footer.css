@@ -4,16 +4,7 @@
   font-style: normal;
   margin-top: 3em;
 }
-.mid-footer {
-  height: 774px;
-  width: 100%;
-  background-color: #a02279;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 7em 10em;
-  gap: 150px;
-}
+
 
 .main-footer {
   height: 322px;
@@ -24,51 +15,8 @@
   padding: 4em 5em;
 }
 
-.mid-footer-text {
-  color: white;
-}
-.mid-footer-text h2 {
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 140%;
-}
-.mid-footer-text p {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 35px;
-}
 
-.mid-footer-text button {
-  background-color: white;
-  color: #a02279;
-  border: none;
-  height: 48px;
-  width: 156px;
-  border-radius: 8px;
-}
 
-.mid-footer-image {
-  position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
-.image1 {
-  position: relative;
-  top: 12em;
-  right: 8em;
-}
-.image2 {
-  position: absolute;
-  top: 0;
-  left: 6em;
-}
-
-.image3 {
-  position: absolute;
-  top: 17em;
-  left: 10em;
-}
 
 
 @media (max-width: 1100px) {

@@ -1,6 +1,5 @@
 import React  from "react";
 import "./Place-to-stay.css";
-import {IoMdOptions} from "react-icons/io";
 import Navbar from "../Mainpage/Navbar/Navbar";
 import { Card, CardDetails } from "../Mainpage/UI/Card";
 import Rate from "../Mainpage/UI/Rate";
@@ -20,16 +19,13 @@ function Placetostay(props){
                 <li>Off-grid</li>
                 <li>Farm</li>
               
-                <view  >
-            <input
+              
+                <input
              className="place-input"
               type="text"
-              placeholder={"location"}
-              
-            />
-            <IoMdOptions/>
-            
-             </view>
+              placeholder={"Location"}
+              />
+             
             </ul>
             
         </nav>

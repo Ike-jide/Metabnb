@@ -3,6 +3,7 @@ import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 import Places from "../Places/Places";
 import Footer from "../Footer/Footer";
+import Midfooter from "../Mid-footer/Midfooter";
 const Home = (props) => {
   return (
     <div>
@@ -37,6 +38,7 @@ const Home = (props) => {
         />
       </div>
      <Places metas={props.metas}/>
+     <Midfooter/>
      <Footer/>
     </div>
     

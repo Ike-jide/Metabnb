@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Navbar.css";
 import {Link} from "react-router-dom"
 import Wallet from "../Wallet/Wallet";
@@ -6,9 +6,11 @@ import Wallet from "../Wallet/Wallet";
 
 
 const Navbar = () => {
-  const [isMobile,setIsMobile] = useState(false);
+ 
+ 
   return (
     <nav className="nav">
+    <input type="checkbox" id="nav-check" />
       <Link to="/">
         <div className="logo">
           <img className="img-logo" src="./images/logo/Vector.png" alt="" />
@@ -19,7 +21,14 @@ const Navbar = () => {
           />
         </div>
         </Link>
-      <div className={isMobile ? "nav-links-mobile" : "nav-links"}>
+        <div className="nav-btn">
+        <label htmlFor="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div className="nav-links">
         <ul>
           <li className="active">
             <a href="/">
@@ -32,12 +41,12 @@ const Navbar = () => {
             
           </li>
           <li>
-            <a href="/NFTs">
+            <a href="/#">
               NFTs
             </a>
           </li>
           <li>
-            <a href="/community">
+            <a href="/#">
               Community
             </a>
           </li>
@@ -51,10 +60,7 @@ const Navbar = () => {
             </Wallet>
           </li>
         </ul>
-        <button className="mobile-menu-icon">
-       {isMobile ? <i className="fas fa times"></i> :<i className="fas fa-bars"></i>}
-
-        </button>
+      
       </div>
      
     </nav>

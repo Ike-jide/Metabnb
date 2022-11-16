@@ -35,7 +35,7 @@ function Wallet() {
                         </div>
 
                         <button className="close-modal" onClick={toggleModal}>
-                            X
+                        <img src="./images/Wallet/x.png" alt="" />
                         </button>
                     </div>
                 </div>
